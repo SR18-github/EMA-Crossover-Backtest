@@ -46,7 +46,7 @@ st.title("📈 EMA Crossover Strategy Backtester")
 
 # Sidebar inputs
 st.sidebar.header("Configuration")
-symbol = st.sidebar.text_input("Stock Symbol", "AAPL")
+symbol = st.sidebar.text_input("Stock Symbol", "")
 start = st.sidebar.date_input("Start Date", pd.to_datetime("2020-01-01"))
 end = st.sidebar.date_input("End Date", pd.to_datetime("2025-01-01"))
 short_window = st.sidebar.slider("Short EMA Window", 5, 50, 12)
